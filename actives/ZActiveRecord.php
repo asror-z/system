@@ -8,7 +8,7 @@
 
 namespace zetsoft\system\actives;
 
-require Root . '/vendori/thread/reacts/vendor/autoload.php';
+require Root . '/vendors/thread/reacts/vendor/autoload.php';
 
 use ArrayObject;
 use UserAgentParserTest\RenderingEngineTest;

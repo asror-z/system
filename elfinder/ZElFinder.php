@@ -2,7 +2,7 @@
 
 namespace zetsoft\system\elfinder;
 
-require Root . '/vendori/fileapp/ALL/vendor/autoload.php';
+require Root . '/vendors/fileapp/ALL/vendor/autoload.php';
 
 use elFinder;
 

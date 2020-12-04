@@ -18,8 +18,8 @@ use zetsoft\system\helpers\ZStringHelper;
 
 class ZAssetManager extends AssetManager
 {
-    private $vendorsUrl = '@web/vendori';
-    private $vendorsPath = '@root/vendori';
+    private $vendorsUrl = '@web/vendors';
+    private $vendorsPath = '@root/vendors';
 
     private $vendorPath = '@root/vendor';
 
@@ -65,8 +65,8 @@ class ZAssetManager extends AssetManager
         }
 
         /*
-         * http://mplace.zoft.uz/vendori/kernel/yiisofts/vendor/yiisoft/yii2/debug/assets/css/main.css
-         * http://mplace.zoft.uz/vendori/kernel/yiisofts/vendor/yiisoft/yii2-debug/src/assets/css/main.css
+         * http://mplace.zoft.uz/vendors/kernel/yiisofts/vendor/yiisoft/yii2/debug/assets/css/main.css
+         * http://mplace.zoft.uz/vendors/kernel/yiisofts/vendor/yiisoft/yii2-debug/src/assets/css/main.css
          *
          * */
 
@@ -74,7 +74,7 @@ class ZAssetManager extends AssetManager
 
         if (!ZStringHelper::find($return, 'yiisofts'))
             $return = strtr($return, [
-                '/vendori' => '/vendori/kernel/yiisofts/vendor',
+                '/vendors' => '/vendors/kernel/yiisofts/vendor',
             ]);
 
         if (ZStringHelper::find($return, '.js'))
